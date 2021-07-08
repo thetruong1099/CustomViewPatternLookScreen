@@ -35,7 +35,7 @@ class SingupActivity : AppCompatActivity() {
         }
     }
 
-    private fun startMainActivity(){
+    private fun startMainActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)

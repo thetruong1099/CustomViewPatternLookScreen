@@ -2,10 +2,10 @@ package com.example.customviewpatternlookscreen.data
 
 class CurrentData {
 
-    companion object{
+    companion object {
         val instance = CurrentData()
     }
 
-    var password:String = ""
+    var password: String = ""
 
 }

@@ -25,14 +25,14 @@ class LoginActivity : AppCompatActivity() {
         plv_login.setOnChangeStateListener { state ->
             when (state) {
 
-                is PatternViewState.Started ->{
+                is PatternViewState.Started -> {
                     tv_error.text = ""
                 }
 
                 is PatternViewState.Success -> {
                     if (plv_login.getPassword() == currentData.password) {
                         showDialog()
-                    }else{
+                    } else {
                         plv_login.setErrorColor()
                     }
                 }
